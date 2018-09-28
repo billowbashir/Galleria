@@ -7,9 +7,17 @@ from django.db import models
 # Image category Foreign Key.
 
 class Location(models.Model):
-    location=models.CharField(max_length=30)
+    name=models.CharField(max_length=30)
+
+    def save_location(self):
+        self.save()
+
 class Category(models.Model):
-    category=models.CharField(max_length=30)
+    name=models.CharField(max_length=30)
+
+    def save_category(self):
+        self.save()
+
 class Image(models.Model):
     image=models.ImageField(upload_to='photos/')
     image_name=models.CharField(max_length=30)
