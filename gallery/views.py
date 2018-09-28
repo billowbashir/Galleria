@@ -4,4 +4,5 @@ from .models import Image,Location,Category
 
 def welcome(request):
     images=Image.objects.all()
-    return render(request,'welcome.html',{"images":images})
+    modals=Image.objects.order_by('id').all()
+    return render(request,'welcome.html',{"images":images,"modals":modals,})

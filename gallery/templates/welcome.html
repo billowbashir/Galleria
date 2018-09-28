@@ -2,18 +2,47 @@
 
 {% block content %}
 {{block.super}}
+
 <div class="container">
-<div class="row ">
-  {%for image in images%}
 
-    <!--Display images  -->
-   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
-     <img class="image img-thumbnail"src="{{image.image.url}}"  alt="Image">
-   </div>
+  <!-- Trigger the modal with a button -->
+  <div type="button"  data-toggle="modal" data-target="#myModal">
+    <div class="row ">
+      {%for image in images%}
+
+        <!--Display images  -->
+       <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
+         <img class="image img-thumbnail"src="{{image.image.url}}"  alt="Image">
+       </div>
 
 
-  {%endfor%}
+      {%endfor%}
+        </div>
+  </div>
+  <!-- Modal -->
+  {%for modal in modals%}
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">fungua</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+
+        <div class="modal-body">
+           <img  src="{{modal.image.url}}"  alt="Image">
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
     </div>
+  </div>
+{%endfor%}
 </div>
 <style>
 .image{
@@ -21,5 +50,10 @@
   width: 100%;
   background-color: BurlyWood ;
 }
+.modal-body{
+  height: 500px;
+  width: 500px;
+}
 </style>
+
 {% endblock %}
