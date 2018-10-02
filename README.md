@@ -16,7 +16,7 @@ create a file .env and put in the required configurations
 run the application locally with python manage.py runserver
 ## Link to live site
 https://bashir-tribune.herokuapp.com/
-<!-- 
+
 ## likely bugs
 Currently the application has no known bugs but if you come across any issues feel free to contact me from the email address that will be provided below.
 
@@ -26,6 +26,7 @@ The technologies used to build the application are:
 - Python/django
 - Bootstrap4
 - css
+<!--
 ## contact details
 feel free to email me at billowbashir@gmail.com incase of any feedback or bugs you face
 
