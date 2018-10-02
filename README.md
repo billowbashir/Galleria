@@ -6,7 +6,7 @@
 
 ## description
 Application that allows user to view photos ,search for photos .The photos themselves are categorised by the locationthey were taken
-<!-- 
+
 ## Installation requirements
 To run the application do the following:
 
@@ -16,7 +16,7 @@ create a file .env and put in the required configurations
 run the application locally with python manage.py runserver
 ## Link to live site
 https://bashir-tribune.herokuapp.com/
-
+<!-- 
 ## likely bugs
 Currently the application has no known bugs but if you come across any issues feel free to contact me from the email address that will be provided below.
 
