@@ -67,7 +67,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 SECRET_KEY = 'dg4-zyzxo)%&0pb+wmdlx38hnov4znth*!_f5*zlj(=6fmc=la'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
