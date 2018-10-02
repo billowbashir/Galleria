@@ -59,7 +59,7 @@ ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-django_heroku.settings(locals())
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
@@ -150,6 +150,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+
+django_heroku.settings(locals())
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
