@@ -10,10 +10,27 @@ Application that allows user to view photos ,search for photos .The photos thems
 ## Installation requirements
 To run the application do the following:
 
-clone this repo by running git clone
-run pip install -r "requirements.txt" to install all requirements
-create a file .env and put in the required configurations
-run the application locally with python manage.py runserver
+- clone this repo by running:
+''' git clone <repo url> '''
+- set up a virtual environment
+ ''' python3.6 -m venv  python3.6 -m venv virtual '''
+- to install all requirements
+''' pip install -r "requirements.txt" '''
+ - create a file .env and put in the following configurations:
+   '''
+  - SECRET_KEY=<secret key>
+  -  DEBUG=False
+   - DB_NAME=<database name>
+  -  DB_USER='<username>
+  -  DB_PASSWORD=<your password>
+   - DB_HOST='127.0.0.1'
+  -  MODE='dev'
+  - ALLOWED_HOSTS=<your site name>
+   - DISABLE_COLLECTSTATIC=1
+   '''
+
+- run the application locally with
+ ''' python manage.py runserver '''
 ## Link to live site
 https://bashir-tribune.herokuapp.com/
 
@@ -23,9 +40,10 @@ Currently the application has no known bugs but if you come across any issues fe
 ## technologies used
 The technologies used to build the application are:
 
-- Python/django
+- Python3.6 and django1.11
 - Bootstrap4
 - css
+- heroku live server
 
 ## contact details
 feel free to email me at billowbashir@gmail.com incase of any feedback or bugs you face
