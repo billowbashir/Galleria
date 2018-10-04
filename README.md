@@ -6,7 +6,13 @@
 
 ## description
 Application that allows user to view photos ,search for photos .The photos themselves are categorised by the locationthey were taken
+## how it works
+it allows users to:
 
+- Click on a single photo to expand it and also view the details of the photo.
+- View different photos that interests them.
+- Filter images based on the location they were taken.
+- Copy a link to the photo
 ## Installation requirements
 To run the application do the following:
 
