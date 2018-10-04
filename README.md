@@ -1,5 +1,5 @@
 # Galleria
-
+![alt text](https://raw.githubusercontent.com/billowbashir/Galleria/master/django_gallery/media/photos/Galleria.png)
 
 ## author
 [bashir hassan](https://github.com/billowbashir/)
@@ -14,6 +14,8 @@ To run the application do the following:
 ``` git clone <repo url> ```
 - set up a virtual environment
  ``` python3.6 -m venv  python3.6 -m venv virtual ```
+ - activate virtual environment
+  ``` source virtual/bin/activate ```
 - to install all requirements
 ``` pip install -r "requirements.txt" ```
  - create a file .env and put in the following configurations:
@@ -36,7 +38,8 @@ https://bashir-tribune.herokuapp.com/
 
 ## likely bugs
 Currently the application has no known bugs but if you come across any issues feel free to contact me from the email address that will be provided below.
-
+## Testing
+- to run tests run ` python manage.py test gallery `
 ## technologies used
 The technologies used to build the application are:
 
