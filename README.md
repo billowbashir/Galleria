@@ -1,5 +1,5 @@
 # Galleria
-![alt text](https://raw.githubusercontent.com/billowbashir/Galleria/master/django_gallery/media/photos/Galleria.png)
+![alt text](https://raw.githubusercontent.com/billowbashir/Galleria/master/media/photos/Galleria.png)
 
 ## author
 [bashir hassan](https://github.com/billowbashir/)
