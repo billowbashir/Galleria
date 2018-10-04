@@ -1,5 +1,12 @@
 {%extends 'base.html'%} {% block content %} {{block.super}}
 
+<div class="container-fluid">
+  <div style="color:#4F0505;">
+  <h1 style="text-align:center;font-family: 'Monoton', cursive;">Welcome to Galleria</h1>
+
+  <h2 style="text-align:center;font-family: 'Charmonman', cursive;">Where all your Gallery dreams come true</h2>
+<hr style="color:#4F0505;">
+  </div>
 
 <div class="row">
   {% for image in images %}
@@ -16,7 +23,7 @@
           <div class="card" style="width:400px">
             <div class="row">
               <div class="col-md-6 col-sm-6">
-                <h4 class="card-title">{{ image.image_name }}</h4>
+                <h4 class="card-title"style="width:100%">{{ image.image_name }}</h4>
               </div>
 
 
@@ -45,9 +52,13 @@
   {% endfor %}
 </div>
 </div>
+
 <style>
 .img-thumbnail{
-  background-color: burlywood;
+  background-color: #4F0505;
+}
+.image-container{
+  margin-bottom: 100px;
 }
 
 </style>
